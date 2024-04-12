@@ -1,0 +1,516 @@
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow: auto;
+}
+header{
+    margin: 0; padding: .3rem 2rem;
+    width:98.2%; height: 10vh;
+    background: beige;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: .5rem; margin-left: .8rem;
+    border-radius: 5mm;
+    transition: .2s linear;
+    z-index: 1000;
+    box-shadow: 5px 5px 5px black;
+}
+header .logo{
+    width: 25%; text-align: center;
+    color: crimson;
+    font-size: 35px;
+    font-family: 'Allura', cursive;
+    transform: translateX(-20%);
+}
+header .menu{
+    width: 50%;
+}
+header .menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0; padding: 0;
+    transform: translateX(15%);
+}
+header .menu ul li{
+    margin: 0.5rem;
+}
+header .menu ul li a{
+    color: rgb(5, 0, 0);
+    transition: .2s linear;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .menu ul li .active,
+header .menu ul li a:hover{
+    color: darkturquoise;
+}
+header .fa-bars{
+    color: darkturquoise;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.material-icons-outlined{
+    color: darkturquoise;
+    padding: 1px;
+    
+}
+.home{
+    margin: 0; padding: 0;
+    width: 98.5%; height: 95vh;
+    background-image: linear-gradient(rgba(1,1,1,0.5),rgba(2,2.5,1,0.5)),url("b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: zoom 10s infinite linear;
+    border-radius: 5mm ;
+    margin-left: .8rem;
+    transform: translateY(-24%);
+}
+@keyframes zoom {
+    20%{ background-image: linear-gradient(rgba(1,1,1,0.5),rgba(2,2.5,1,0.5)),url("1.jpg");}
+    40%{background-image: linear-gradient(rgba(1,1,1,0.5),rgba(2,2.5,1,0.5)),url("2.jpg");}
+    60%{background-image: linear-gradient(rgba(1,1,1,0.5),rgba(2,2.5,1,0.5)),url("Samsing.jpg");}
+    80%{background-image: linear-gradient(rgba(1,1,1,0.5),rgba(2,2.5,1,0.5)),url("m.jpg");}
+    100%{background-image: url("riverside.jpg");}
+}
+section .title{
+    width: 100%; height: 110vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center; color: white;
+    font-family:'Arizonia', cursive;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 25vh;
+    transform: translateY(22%);
+}
+.title h1{
+    font-size: 55px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 5px 5px 5px black;
+}
+.title h2{
+    margin: 0px 0 5px 0;
+    font-size: 60px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    text-shadow: 5px 5px 5px black;
+}
+.title h3{
+    margin: 0 0 25px 0;
+    font-size: 45px;
+    word-spacing: 15px;
+    letter-spacing: 2px;
+    font-family: 'Allura', cursive;
+    color: #aff;;
+    font-weight: 500;
+    text-shadow: 5px 5px 5px black;
+    transform: translateY(-15%);
+}
+.title a{
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.btn1 {
+    width: 450px;
+    padding: 12px 12px;
+    border-radius: 55px;
+    outline: none;
+    letter-spacing: 1px;
+    background: beige;
+    color: rgb(30, 87, 209) ;
+    justify-content: center;
+    margin-left: 35%;
+    margin-bottom: 20px;
+}
+.btn1:hover{
+    background: rgb(12, 146, 101);
+    color: black;
+    text-decoration: underline;
+}
+.title .signin{
+    color: white;
+    margin: 0px 500px;
+    font-size: 20px;
+    font-family: sans-serif;
+    transition: .2s;
+    
+}
+.title .signin:hover{
+    color:wheat;
+    font-size: 25px;
+    text-decoration: underline;
+    text-shadow: 5px 5px 5px black;
+}
+.destination{
+    margin-left: .8rem;
+    min-height:80vh; width: 98%;
+    background:white;
+    text-transform: uppercase;
+    transform: translateY(-27%);    
+}
+.destination .card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    transform: translateX(.5%);
+}
+.destination .card-container .card{
+    width: 22.79rem; height: 59.9vh;
+    background:white;
+    box-shadow: .3rem .5rem rgba(o,0,0,.3);
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .2s linear;
+}
+.destination .card-container .card img{
+    object-fit: cover;   
+}
+.destination .card-container .card .content{
+    position: absolute;
+    top: 0; left: 0;
+    background: linear-gradient(rgba(1,1,1,0.5),rgba(2,2.5,1,0.5));
+    height: 450px; width: 355px;
+    justify-content: center;
+}
+.destination .card-container .card .desc{
+    text-transform: none;
+    top: 25%; left: 2%;
+    position: absolute;
+    width: 340px;
+    opacity: 0;
+    transition: .2s linear;
+}
+.destination .card-container .card .desc p{
+    color:whitesmoke;
+    font-size: 1.1rem;
+}
+.destination .card-container .card .content:hover .desc{
+    opacity: 1;
+}
+.destination .card-container .card .content a{
+    text-decoration-line: none;
+    color: white;
+    text-shadow: .1rem .1rem #000;
+    font-size: 2rem;
+    font-weight: lighter;
+    padding: 7rem;
+    font-family: 'Caveat', cursive;
+}
+.destination .card-container .card .content a:hover {
+    color: darkturquoise;
+}
+.heading{
+    color: teal;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    letter-spacing: .2rem;
+    font-family: 'Merienda', cursive;
+    text-transform: uppercase;
+}
+.services{
+    width:98%; 
+    margin-left: .8rem;
+    background: white;
+    transform: translateY(-20%);  
+}
+.services .container{
+    width: 1300px; height: 400px;
+    background: #ccc;
+    margin: 50px auto;
+    display: flex;
+}
+.services .container .col{
+    height: 100%;
+    flex: 1;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 25px;
+    transition: .6s;
+}
+.services .container .col:nth-child(1){
+    background: linear-gradient(rgba(1,1,1,0.5),rgba(2,2.5,1,0.5)),url("car.jpg");
+    background-size: cover;
+}
+.services .container .col:nth-child(2){
+    background:linear-gradient(rgba(1,1,1,0.5),rgba(2,2.5,1,0.5)), url("rafting.jpg");
+    background-size: cover;
+}
+.services .container .col:nth-child(3){
+    background: linear-gradient(rgba(1,1,1,0.5),rgba(2,2.5,1,0.5)),url("junglesafari.jpg");
+    background-size: cover;
+}
+.services .container .col:nth-child(4){
+    background:linear-gradient(rgba(1,1,1,0.5),rgba(2,2.5,1,0.5)), url("hotel.jpg");
+    background-size: cover;
+}
+.services .container .col h2{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 5px black;
+}
+.services .container .col .caption{
+    max-width: 230px;
+    font-size: 20px;
+    margin: 28px 0;
+    display: none;
+}
+.services .container .col .caption button{
+    border: 1px solid white;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    padding: 8px 18px;
+    color: white;
+    border-radius: 30px;
+    margin-top: 100px;
+    font-size: 20px;
+}
+.services .container .col .caption button:hover{
+    background: white;
+    color:blueviolet;
+    font-style: italic;
+}
+.services .container .col:hover{
+    flex-grow: 3;
+}
+.services .container .col:hover .caption{
+    display: block;
+}
+.services .container .col:hover h2{
+    text-align: left;
+}
+.review .heading{
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    letter-spacing: .2rem;
+    font-family: 'Merienda', cursive;
+    text-transform: uppercase;
+}
+.review{
+    margin-left: .8rem;
+    width: 98.5%; height: auto;
+    background: url("resort.jpg"),linear-gradient(#0098a1,#0098a1) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    border-radius: 5mm ;
+}
+.review .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.review .box-container .box{
+    width: 25rem;
+    margin: 6rem 2rem;
+    padding-bottom: 2rem; 
+    text-align: center;
+    box-shadow: 0 .3rem .5rem #000;
+    background: #fff;
+}
+.review .box-container .box .image{
+    margin-top: -5rem;
+}
+.review .box-container .box .image img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: .3rem solid #fff;
+}
+.review .box-container .box .content h3{
+     font-size: 1.5rem;
+     color: #0098a1;
+}
+.review .box-container .box .content p{
+    font-size: 1.2rem;
+    color: #333;
+    padding: .1rem 1.5rem;
+}
+.review .box-container .box .content .stars i{
+    color: rgb(212, 183, 14);
+    font-size: 1.5rem;
+    padding: .1rem .1rem;
+}
+.review .link{
+    margin-left: 68%;
+    width: 400px;
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+    transition: .2s linear;
+}
+.review a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    transition: .2s linear;
+}
+.review a:hover{
+    color: skyblue;
+}
+.review button{
+    padding: 1rem;
+    margin: .5rem;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;;
+    outline: none;
+    border: none;
+    background: tomato;
+    color: thistle;
+    transition: .2s linear;
+}
+.review button:hover{
+    background: teal;
+    color: white;
+}
+
+.about{
+    min-height: 85vh;
+    margin-left: .8rem;
+    width: 98.5%;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+}
+.about .row .image img{
+    height: 65vh; width: 50vw;
+}
+.about .row .content h3{
+    font-size: 2.7rem;
+    color: #0098a1;
+    text-transform: capitalize;
+    font-style: italic;
+    margin: 0 2rem;
+}
+.about .row .content p{
+    font-size: 1.2rem;
+    color: black;
+    font-weight: lighter;
+    margin: 0 2rem;
+}
+.about .row .content button{
+    outline: none;
+    margin: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: .2s linear;
+    height: 3rem; width: 10rem;
+    margin-top: .5rem;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    background: #0098a1;
+    font-style: italic;
+    border-radius: 50px;
+}
+.about .row .content button:hover{
+    background: none;
+    color: #0098a1;
+    border: .15rem solid #0098a1;
+}
+.contact{
+    width: 98.5%;
+    margin-left: .8rem;
+}
+.contact .row .contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact .row .contact-info .box{
+    margin: 2rem 2rem;
+}
+.contact .row .contact-info .box h3{
+    font-size: 1.5rem;
+    color: black;
+    text-transform: capitalize;
+}
+.contact .row .contact-info .box h3 i{
+    color: #0098a1;
+    margin-right: .5rem;
+}
+.contact .row .contact-info .box p{
+    padding-left: 2rem;
+    font-size: 1.2rem;
+    color:#333;
+}
+.newsletter{
+    padding: 2rem;
+    background: linear-gradient(#0098a1,#0098a1),url("resort.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    text-align: center;
+    width: 98.5%; margin-left: .8rem;
+}
+.newsletter a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-style: oblique;
+    font-weight: bold;
+    text-shadow: 0 .3rem .5rem #000;
+}
+.newsletter a:hover{
+    font-size: 2.5rem;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background: #222;
+    margin-top: .1rem;
+    width: 98.5%; margin-left: .8rem;
+}
+.footer .credit{
+    font-size: 2rem;
+    color:white;
+    text-transform: capitalize;
+    font-style: oblique;
+}
+.footer .credit span{
+    color: turquoise;
+}
+.footer .icons a{
+    font-size: 1.7rem;
+    margin: 0 .5rem;
+    height: 4rem; width: 4rem;
+    line-height: 3.5rem;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    border: .19rem solid white;
+    text-decoration: none;
+}
