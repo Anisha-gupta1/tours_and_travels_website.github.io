@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARD SLIDER</title>
+    <link rel="stylesheet" href="r.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+<body>
+    <div class="slider owl-carousel">
+        <div class="card">
+            <div class="img"><img src="csbatasia.jpg" alt=""></div>
+            <div class="content">
+                <div class="title">BATASIA LOOP</div>
+                <div class="btn">
+                    <button>visit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img"><img src="cskurseong.jpg" alt=""></div>
+            <div class="content">
+                <div class="title">KURSEONG</div>
+                <div class="btn">
+                    <button>visit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img"><img src="cssandakphu.jpg" alt=""></div>
+            <div class="content">
+                <div class="title">SANDAKPHU</div>
+                <div class="btn">
+                    <button>visit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img"><img src="csrock.jpg" alt=""></div>
+            <div class="content">
+                <div class="title">ROCK GARDEN</div>
+                <div class="btn">
+                    <button>visit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img"><img src="cssiliguri.jpg" alt=""></div>
+            <div class="content">
+                <div class="title">SILIGURI</div>
+                <div class="btn">
+                    <button>visit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img"><img src="cstigerhill.jpg" alt=""></div>
+            <div class="content">
+                <div class="title">TIGERHILL</div>
+                <div class="btn">
+                    <button>visit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img"><img src="cszoo.jpg" alt=""></div>
+            <div class="content">
+                <div class="title">DARJEELING ZOO</div>
+                <div class="btn">
+                    <button>visit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".slider").owlCarousel({
+            loop: true,
+            autoplay:true,
+            autoplaTimeout:2000, //2000ms=2s;
+            autoplayHoverPause: true,
+        });
+    </script>
+</body>
+</html>

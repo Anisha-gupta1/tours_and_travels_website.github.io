@@ -1,0 +1,326 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow: auto;
+}
+header{
+    margin: 0; padding: .3rem 2rem;
+    width:98.2%; height: 10vh;
+    background: beige;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: .5rem; margin-left: .8rem;
+    border-radius: 5mm;
+    transition: .2s linear;
+    z-index: 1000;
+    box-shadow: 5px 5px 5px black;
+}
+header .logo{
+    width: 25%; text-align: center;
+    color: crimson;
+    font-size: 35px;
+    font-family: 'Allura', cursive;
+    transform: translateX(-20%);
+}
+header .menu{
+    width: 50%;
+}
+header .menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0; padding: 0;
+    transform: translateX(20%);
+}
+header .menu ul li{
+    margin: 0.5rem;
+    
+}
+header .menu ul li a{
+    color: rgb(5, 0, 0);
+    transition: .2s linear;
+    text-decoration: none;
+    font-weight: bold;
+}
+header .menu ul li .active,
+header .menu ul li a:hover{
+    color: darkturquoise;
+}
+header .fa-bars{
+    color: darkturquoise;
+    cursor: pointer;
+    font-size: 2rem;
+    
+}
+.part1{
+    margin: 0; padding: 0;
+    width: 98.5%; height: 90vh;
+    border-radius: 5mm ;
+    margin-left: .8rem;
+    background: white;
+    margin-top: 20px;
+}
+.part1 .title{
+    display: flex;
+    justify-content: space-between;
+}
+.part1 .title h1{
+    text-transform: capitalize;
+    font-size: 50px;
+    color:black;
+    margin: 0px 20px;
+    font-family: 'Pacifico', cursive;
+    font-weight: lighter;
+}
+.part1 img{
+    object-fit: cover;
+    width: 60%;
+    margin-left: 10px;
+}
+.part1 .title button{
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+    background-color: yellow;
+    outline: none;
+    border: 0;
+    color: rgb(51, 48, 48);
+    border-radius: 10px;
+}
+.part1 .title button:hover{
+    background-color: orangered;
+    color: white;
+    font-size: 15px;
+}
+.part1 .card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(3%);
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+    margin: 5px;
+    padding-bottom: 20px;
+}
+.part1 .card-container .card{
+    width: 450px; height: 250px;
+    background:white;
+    box-shadow: .3rem .5rem rgba(o,0,0,.3);
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .2s linear;
+}
+.part1 .card-container .card img{
+    object-fit: cover; 
+    width: 100%; height: 100%;
+}
+.part1 .card-container .card .content{
+    position: absolute;
+    top: 0; left: 0; 
+    background: linear-gradient(rgba(1,1,1,0.5),rgba(2,2.5,1,0.5));
+    height: 250px; width: 450px; margin-left: 10px;
+    justify-content: center;
+    text-align: center;
+}
+.part1 .card-container .card .content a{
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-top: 1000px;
+}
+.part1 .card-container .card .content a:hover{
+    color: turquoise;
+}
+.part1 .card-container .card .content a span{
+    font-style: italic;
+    text-align: center;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    padding: 15px;
+}
+.part1 .desc{
+    background: rgb(241, 238, 238);
+    align-items: center;
+    width: 99%;
+    margin:30px 10px;
+}
+.part1 .desc .details h2{
+    color: darkviolet;
+    text-transform: capitalize;
+    margin: 10px 30px;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+.part1 .desc .details .para{
+    font-size: 1.1rem;
+    line-height: 25px;
+    margin: 10px;
+    text-align: justify;
+    text-indent: 50px;
+}
+.part1 .pic{
+    display: flex;
+}
+.part1 .pic p{
+    margin: 10px;
+    text-align: justify;
+    font-size: 1.1rem;
+    text-indent: 50px;
+    line-height: 1.9rem;
+}
+.part1 span{
+    font-style: italic;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.part1 .desc .details .logo img{
+    width: 100px; height: 100px;
+    border: none; outline: none;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.part1 .desc .details .via{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.part1 .desc .details .via .logo{
+    width: 400px;
+    margin: 10px;
+    text-align: center;
+}
+.part1 .desc .details .via .logo h3{
+    text-transform: capitalize;
+    font-size: 27px;
+    color: darkviolet;
+    padding: 5px;
+      
+}
+
+.cardslider {
+    display: grid;
+    height: auto;
+    place-items: center;
+    text-align: center;
+}
+.cardslider h1{
+    font-size: 2rem;
+    margin: 15px;
+    margin-bottom: 25px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: darkblue;
+}
+.cardslider .slider{
+    max-width: 1200px;
+    display: flex;
+    padding: 10px;
+}
+.cardslider .slider .card{
+    background:#fff;
+    flex: 1;
+    margin: 0 10px;
+}
+.cardslider .slider .card .img{
+    height: 200px;
+    width: 100%;
+}
+.cardslider .slider .card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.cardslider .slider .card .content{
+    padding: 10px 20px;
+}
+.cardslider .card .content .title{
+    font-size: 25px;
+    font-weight: 600;
+}
+.cardslider .card .content .btn{
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    
+}
+.cardslider .card .content .btn button{
+    background: rgb(78, 128, 202);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding: 8px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    text-transform: uppercase;
+
+}
+.cardslider .card .content .btn button:hover{
+    transform: scale(0.9);
+}
+.content h1{
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2.5rem;
+}
+
+.accordion{
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+.accordion-item {
+    background-color: rgb(117, 155, 197);
+    color: #111;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25) ;
+}
+
+.accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height : 1.25rem;
+    font-weight:bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion-item-header::after{
+    content: "\25BE";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+.accordion-item-header.active::after{
+    /content: "\2212";/
+    transform: rotate(-180deg);
+}
+
+.accordion-item-body{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right,transparent,#34495e,transparent) 1;
+}

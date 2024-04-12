@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="book.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="1">
+        <div class="form-box">
+            <div class="form-container">
+                <h1>book your destination</h1>
+                <form class="inputs" action="s.php" method="POST">
+                    <div class="no">
+                        <span>first name </span>
+                        <input type="text" placeholder="e.g. Avinash" required name ="first_name">
+                        <span>last name </span>
+                        <input type="text" placeholder="e.g. Mathur" required name ="last_name">
+                    </div>
+    
+                    <span>email id</span>
+                    <input type="email" placeholder="e.g. xyz21@gmail.com" name ="email">
+    
+                    <span>contact no.</span>
+                    <input type="number" required name ="phone_no">
+
+                    <span>location</span>
+                    <input type="text" placeholder="Place you want to visit" required name ="location">
+
+                    <span>no. of guests</span>
+                    <input type="number" placeholder="No. of people" required name="person">
+
+                    <span>arrival date</span>
+                    <input type="date" placeholder="dd/mm/yyyy" required name ="arrival">
+
+                    <span>departure date</span>
+                    <input type="date" placeholder="dd/mm/yyyy" required name ="departure">
+
+                    <input type="submit" value ="CONFIRM" name="save">      
+                </form>
+            </div>
+        </div>
+    </section>    
+   
+</body>
+</html>

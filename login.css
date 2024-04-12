@@ -1,0 +1,104 @@
+*{
+    margin: 0; padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-image: linear-gradient(rgba(1,1,1,0.5),rgba(2,2.5,1,0.5)), url("coffee.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    background-position: center;
+}
+.form-box{
+    width: 450px;
+    height: 540px;
+    text-align: center;
+    margin: 0 auto;
+    background-color:white;
+    border-radius: 64px;
+    margin-top: 160px;
+    box-shadow: 10px 10px 5px black;
+}
+.form-box img{
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-right: 20px;
+    border-radius: 70px;
+}
+.form-box .login{
+    position: absolute;
+    width: 420px;
+    transition: .2s;
+    margin-left: 5px;
+}
+.form-box .login .title{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    margin-left: 2.5rem;
+}
+.form-box .login .fields{
+    transform: translateY(10%);
+    text-align: left;
+}
+
+.form-box .login .fields h1{
+    position: relative;
+    font-weight:lighter;
+    font-size: 18px;
+    margin-top: 15px;
+    
+}
+.form-box .login .input-field{
+    width: 70%;
+    padding: 10px 0;
+    margin: 5px 5px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+    display: block;
+}
+.form-box .login .submit-btn{
+    width:55%;
+    padding: 12px 12px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: springgreen;
+    border-radius: 74px;
+    outline: none;
+    border: 0;
+    margin-top: 20px;
+    color: white;
+    font-size: 25px;
+}
+.form-box .login .submit-btn:hover{
+    background: dodgerblue;
+}
+.form-box .login .check-box{
+    margin: 20px;  
+    margin-left: 0;
+}
+
+.form-box .login span{
+    color: #777;
+    bottom: 68px;
+    margin-left: -10px;
+}
+.form-box .login .fields p{
+    padding: 1rem;
+    text-align: center;
+}
+.form-box .login .fields p a{
+    text-decoration: none;
+    margin-left: .2rem;
+    color: black;
+}
+.form-box .login .fields p a:hover{
+    color: blueviolet;
+}

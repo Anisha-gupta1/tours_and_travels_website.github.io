@@ -1,0 +1,102 @@
+*{
+    margin: 0; padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-image: linear-gradient(rgba(1,1,1,0.5),rgba(2,2.5,1,0.5)), url("coffee.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 100%;
+}
+.form-box{
+    width: 550px;
+    height: 650px;
+    text-align: center;
+    margin: 0 auto;
+    background-color:white;
+    border-radius: 64px;
+    margin-top: 100px;
+    box-shadow: 10px 10px 5px black;
+}
+.form-box img{
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-right: 20px;
+    text-align: center;
+    border-radius: 70px;
+    border: .3rem solid gray;
+    object-fit: cover;
+}
+.form-box .register{
+    position: relative;
+    width: 525px;
+    margin-left: .8rem;
+    transition: .2s;
+}
+.form-box .register .title{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    padding:.5rem;
+}
+.form-box .register .fields{
+    margin-top: 1.5rem;
+    width: 70%;
+}
+.form-box .register .fields h1{
+    position: relative;
+    font-weight:lighter;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 15px;   
+}
+.form-box .register .input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+}
+.form-box .register .fields .same{
+    margin: 5px;
+}
+.form-box .register .submit-btn{
+    width:65%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: springgreen;
+    border-radius: 74px;
+    outline: none;
+    border: 0;
+    margin-top: 10px;
+    transform: translateX(30%);
+    color: white;
+    font-size: 25px;
+}
+.form-box .register .submit-btn:hover{
+    background: dodgerblue;
+}
+.form-box .register span{
+    color: black;
+    bottom: 68px;
+    margin-left: -8px;
+}
+.form-box .register p{
+    margin-top: 6px;
+}
+.form-box .register p a{
+    text-decoration: none;
+    color: black;
+}
+.form-box .register p a:hover{
+    color: blueviolet;
+}
